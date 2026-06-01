@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDay Works</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper__content">
+      <h1>لیست کارهای روزانه</h1>
+      <p>با HTML/CSS/JS تمرین کن 😄</p>
+      <section class="add-work__section">
+        <form id="today__form" class="today__form">
+          <input
+            type="text"
+            placeholder="اضافه کردن کار "
+            id="todo__work"
+            required=""
+          />
+          <select name="" id="select__option">
+            <option value="low">کم</option>
+            <option value="medium">متوسط</option>
+            <option value="high">زیاد</option>
+          </select>
+          <button id="add__btn" type="button">افزودن</button>
+        </form>
+        <div class="filters">
+          <button type="button" class="filter__all active" data-filter="all">همه</button>
+          <button type="button" class="filter__done" data-filter="done">انجام شده</button>
+          <button type="button" class="filter__not" data-filter="not-done">انجام نشده</button>
+        </div>
+        <div class="title__div">
+          <span class="titles"> شماره </span>
+          <span class="titles"> عنوان کار </span>
+          <span class="titles"> اولویت </span>
+          <span class="titles"> تایید </span>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+
+        <p id="emptyState" class="empty">هنوز کاری اضافه نشده. 👇</p>
+      </section>
+      <footer class="footer">
+        <span>نسخه تمرینی • ذخیره‌سازی: localStorage</span>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
